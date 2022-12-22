@@ -1,0 +1,15 @@
+.container {
+  min-width: initial;
+  white-space: nowrap;
+}
+.logo-img {
+  display: flex;
+  margin: auto;
+  width: 30%;
+}
+.heading {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  display: flex;
+  padding: 3px 5px;
+}

@@ -1,0 +1,33 @@
+{
+  "manifest_version": 2,
+  "name": "Jira Issue Button",
+  "version": "1.0",
+  "description": "Copies Jira Issue and title with one button",
+  "homepage_url": "https://github.com/miholeus/JiraIssueBtn",
+  "author": "https://github.com/miholeus",
+  "icons": {
+    "32": "icons/logo_32.png",
+    "48": "icons/logo_48.png",
+    "64": "icons/logo_64.png"
+  },
+  "browser_action": {
+    "default_icon": "icons/logo_32.png",
+    "default_title": "Jira Issue Id",
+    "default_popup": "popup/index.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://jira.mvk.com/*",
+        "*://jira.vk.team/*"
+      ],
+      "js": [
+        "copybtn.js"
+      ],
+      "run_at": "document_start",
+      "css": [
+        "css/style.css"
+      ]
+    }
+  ]
+}
