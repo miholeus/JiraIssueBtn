@@ -7,7 +7,7 @@ const JiraIssueButton = {
 
   copyToClipboard: function(data) {
     navigator.clipboard.writeText(
-      `${this.jiraHost()}/${data["key"]} ${data["fields"]["summary"]}`
+      `${this.jiraHost()}/browse/${data["key"]} ${data["fields"]["summary"]}`
     );
   },
 
